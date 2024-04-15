@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(234, 234, 234);
+}
+
+header{
+    background-color: rgb(12, 12, 12);
+    margin-bottom: 15px;
+    color: white;
+}
+
+.menu-hamburger{
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburger:hover{
+    transition: ease 0.5s;
+    transform: scale(1.1);
+    background-color: #c7c4c464;
+}
+
+.menu-hamburger span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container{
+    max-width: 1026px;
+    width: 100%;
+}
+
+header >.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container ul li a,
+.container ul li,
+.container ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin: auto 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+nav{
+    display: none;
+    background-color: blue;
+
+}
+
+.col-md-4{
+    display: flex;
+    
+
+}
+
+.card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.557);
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.633);
+
+}
+
+.card-body a,
+.container a{
+    transition: 0.3s ease;
+}
+.card-body a:hover,
+.container a:hover{
+    transform: scale(1.1);
+}
+
+.card img{
+    border-radius: 5%;
+    height: 280px;
+    width: 316px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    
+}
+
+.loader{
+
+}
+
+@media screen and (max-width:1023px){
+
+    .container .row{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .col-md-4{
+        width: 400px;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width:640px){
+
+.container .row{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+}
+
+.col-md-4{
+    width: 400px;
+    margin: 10px auto;
+}
+}
